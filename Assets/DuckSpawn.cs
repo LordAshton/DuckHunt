@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameController : MonoBehaviour
+public class DuckSpawn : MonoBehaviour
 {
 	public GameObject hazard;
 	public Vector3 spawnValues;
@@ -47,3 +47,12 @@ public class GameController : MonoBehaviour
 		scoreText.text = "Score: " + score;
 	}
 }
+
+//	//flightDirection = (Random.value < 0.5);
+//	//OnTriggerEnter
+//
+//	//void Update () {
+//	//if (currentTime <= Time.time) {
+//	//currentTime = Time.time + nextTime;
+//	//Object.Instantiate(newDuck);
+//	//}}
