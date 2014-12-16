@@ -6,7 +6,7 @@ public class DuckDead : MonoBehaviour
 	public GameObject ShotDuck;
 	public GameObject DeadDuck;
 	public int scoreValue;
-	private GameController gameController;
+	public GameController gameController;
 
 	public GUIText scoreText;
 	private int score;
@@ -42,8 +42,8 @@ public class DuckDead : MonoBehaviour
 
 
 		StaticVars.score++;
+		if (gameController != null)
 		gameController.AddScore (scoreValue);
-		Destroy(other.gameObject);
 		Object.Destroy(gameObject);
 		
 	}

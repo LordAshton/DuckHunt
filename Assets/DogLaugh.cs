@@ -3,13 +3,10 @@ using System.Collections;
 
 public class DogLaugh : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+		public GameObject dog;
+		public Animator dogAnims;
+
+		void OnTriggerEnter2D () {
+				dogAnims.SetBool ("BirdHit", true);
+			}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-}
