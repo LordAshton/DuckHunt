@@ -30,11 +30,16 @@ public class DuckDead : MonoBehaviour
 		{
 			return;
 		}
+		if (ShotDuck != null)
 		Instantiate(ShotDuck, transform.position, transform.rotation);
+
+
 		if (other.tag == "Player")
 		{
+			if (DeadDuck != null)
 			Instantiate(DeadDuck, other.transform.position, other.transform.rotation);
 		}
+
 
 		StaticVars.score++;
 		gameController.AddScore (scoreValue);

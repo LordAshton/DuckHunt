@@ -46,18 +46,19 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BirdFall.cs" />
-     <Compile Include="Assets\DestroyByContact.cs" />
-     <Compile Include="Assets\DuckDead.cs" />
-     <Compile Include="Assets\DuckFall.cs" />
-     <Compile Include="Assets\DuckFly.cs" />
-     <Compile Include="Assets\DuckKill.cs" />
-     <Compile Include="Assets\DuckSpawn.cs" />
-     <Compile Include="Assets\GameController.cs" />
-     <Compile Include="Assets\UpdateScore.cs" />
-     <Compile Include="Assets\crosshaircontroller.cs" />
-     <Compile Include="Assets\documents-export-2014-12-02\StaticVars.cs" />
-     <Compile Include="Assets\duckscript.cs" />
+     <Compile Include="Assets\DogLaugh.cs" />
+     <Compile Include="Assets\Scripts\BirdFall.cs" />
+     <Compile Include="Assets\Scripts\DestroyByContact.cs" />
+     <Compile Include="Assets\Scripts\DuckDead.cs" />
+     <Compile Include="Assets\Scripts\DuckFall.cs" />
+     <Compile Include="Assets\Scripts\DuckFly.cs" />
+     <Compile Include="Assets\Scripts\DuckKill.cs" />
+     <Compile Include="Assets\Scripts\DuckSpawn.cs" />
+     <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\StaticVars.cs" />
+     <Compile Include="Assets\Scripts\UpdateScore.cs" />
+     <Compile Include="Assets\Scripts\crosshaircontroller.cs" />
+     <Compile Include="Assets\Scripts\duckscript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
