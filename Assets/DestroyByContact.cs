@@ -20,8 +20,8 @@ public class DestroyByContact : MonoBehaviour
 			Debug.Log ("Cannot find 'GameController' script");
 		}
 	}
-	
-	void OnTriggerEnter(Collider other) 
+
+	void OnTriggerEnter2D(Collider2D other) 
 	{
 		if (other.tag == "Boundary")
 		{
@@ -32,8 +32,10 @@ public class DestroyByContact : MonoBehaviour
 		{
 			Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
 		}
+		StaticVars.score++;
 		gameController.AddScore (scoreValue);
 		Destroy(other.gameObject);
-		Destroy(gameObject);
+		Object.Destroy(gameObject);
+
 	}
 }
